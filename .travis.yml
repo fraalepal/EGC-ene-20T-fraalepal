@@ -23,10 +23,3 @@ notifications:
   slack:
     on_success: never
     on_failure: never
-deploy:
-  provider: heroku
-  app: testexamfraalepal
-  strategy: git
-  api_key: $HEROKU_AUTH_TOKEN
-  on:
-    branch: master
