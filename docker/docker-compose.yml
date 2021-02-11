@@ -21,6 +21,7 @@ services:
       - "5000"
     volumes:
       - static:/app/static
+      - $PWD/..:/app
     depends_on:
       - db
     networks:
@@ -46,7 +47,7 @@ volumes:
     name: decide_static
   db:
     name: decide_db
-
+  
 networks:
   decide:
     driver: bridge

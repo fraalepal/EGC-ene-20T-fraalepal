@@ -70,7 +70,7 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'https://testexamfraalepal.herokuapp.com'
+BASEURL = 'http://localhost:8000'
 
 APIS = {}
 
@@ -183,5 +183,3 @@ if os.path.exists("config.jsonnet"):
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
 
-import django_heroku
-django_heroku.settings(locals())
